@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset='utf-8'>
+<head>
+	<link rel="stylesheet" type="text/css" href="minunstyle.css">
+	<title> Best site on the world</title>
+	
+	<script src="minunmainscript.js"></script>
+
+<p id="otsikko">tervetuloa</p>
+
+
+</head>
+
+<body>
+
+
+<Div class="vasen">
+
+<div class="vasensisa">
+
+<p id="huom">Ilmoittaudu kyselyyn ja osallistu arvontaan josta voit voittaa palkinnon</p>
+<p id="eivaadi">Arvontaan osallistuminen ei vaadi kyselyyn osallistumista</p>
+
+
+<br>
+Valitse minkä haluaisit palkinnoksi arvonnastamme<br>
+  <select name="palkinnot">
+    <option value="Teevee">Teevee</option>
+    <option value="Sonyn puhelin">Sonyn puhelin</option>
+    <option value="Koko kesän oluet">Koko kesän oluet</option>
+    <option value="Vuoden pitsat">Vuoden Pitsat</option>
+  </select>
+  
+  <form>
+  Etunimi:<br>
+  <input type="text" name="etunimi" placeholder="Aku"><br>
+  Sukunimi:<br>
+  <input type="text" name="sukunimi" placeholder="Ankka"><br>
+  Sähköposti:<br>
+  <input type="email" name="sähköposti" placeholder="aku.ankka@ankkaposti.fi"><br>
+  </form>
+  <form action="">
+  <input type="checkbox" name="tiedot" value="saapostata">Tietojani saa käyttää kodittomien kissojen hyväksi
+  </form>
+  <br><br>
+  <input type="submit" onClick="alert('Eipäs toimikaan!'); munFunktio()" value="Lähetä vastaus">
+  </form>
+  <br>
+  <button onClick="alert('Ei tämäkään toimi!'); toinenFunktio()">Piilota kuva</button>
+</div>
+</div>
+  <br><br>
+  
+</form>
+<div class="keski">
+
+<img class="trol" id="kuva" src="trol.jpg" alt="jotain vaan">
+
+<!-- lisää style="visibility:hidden"/>  jos haluat piilottaa kuvan kokonaan. Sillon joudut myös lisäämään funktioon seuraavan: kuva.style.visibility = "visible"; -->
+</Div>
+<div class="oikea">
+	<div class="oikeayla">
+	
+	<p class="testi"><strike>Tuohon pitäisi kuva tulla alle jossain välissä</strike></p>
+	
+	
+	</p>
+	</div>
+	<div class="oikeaala">
+		<img class="kuvaoikeaala" src="trophy.jpg" alt="kyllä tässä pitäisi joku pokaalin kuva olla"/>
+	</div>
+	
+</div>
+
+<!--<script type = "text/javascript">
+    function munFunktio()
+	{
+		document.getElementById("kuva").src ="trol.jpg";
+		
+		
+	}
+	
+        
+</script> -->
+
+</body>
+
+</html>
